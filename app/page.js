@@ -8,7 +8,7 @@ const TradePage = () => {
 
   useEffect(() => {
     // Initialize WebSocket connection using environment variable
-    const wsUrl = "ws://trader-backend-production.up.railway.app/";
+    const wsUrl = "wss://trader-backend-production.up.railway.app/";
     const websocket = new WebSocket(wsUrl);
 
     websocket.onopen = () => {
